@@ -553,8 +553,20 @@ section h2 {
     color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 5px;
-    border-top: 5px;
-  }
+    border-top: 5px solid; /* Added 'solid' for proper border */
+}
+
+.footer h3,
+.footer p {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove padding */
+    line-height: 1.2; /* Adjust line height if necessary */
+}
+
+.footer .container {
+    padding: 0; /* Ensure no padding within the container */
+}
+
 
 
 /* Floating Button Shared Styles */
@@ -607,7 +619,7 @@ section h2 {
     .floating-btn {
       width: 60px;
       height: 60px;
-      bottom: 40px; 
+      bottom: 25px; 
     }
   
     .icon {
